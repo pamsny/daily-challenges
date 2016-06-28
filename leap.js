@@ -1,16 +1,11 @@
-# daily-challenges
-var year = prompt('Enter a year');
-function leapYear(year) 
-{
-
-    if (year % 4 === 0 && year % 100 === 0 && year % 400 === 0){
-        return console.log(year + ' is a leap year!!!');         
-    }
-    else {
-        return console.log(year + ' is NOT a leap year');        
-    }
-
+function leapYear(num) {
+  if (num % 4 === 0 ) {
+    return true;
+  } else if (num % 100 === 0 && num % 400 === 0) {
+    return true;
+  } else {
+    return false;
+  }
 }
-
-document.write(leapYear(year));
-//console.log(leapYear(year));
+var year = prompt('Give a year.');
+console.log(leapYear(year));
